@@ -55,4 +55,8 @@ const cli = meow(`
   }
 });
 
-console.log(geld(cli.input[0], cli.flags));
+if (cli.input[0] === undefined) {
+  cli.showHelp();
+} else {
+  console.log(geld(cli.input[0], cli.flags));
+}
