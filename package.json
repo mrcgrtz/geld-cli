@@ -1,0 +1,44 @@
+{
+  "name": "geld-cli",
+  "version": "1.0.0",
+  "description": "A CLI for geld, a minimal currency formatter.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dreamseer/geld-cli.git"
+  },
+  "author": {
+    "name": "Marc Görtz",
+    "email": "git@marcgoertz.de",
+    "url": "https://marcgoertz.de/"
+  },
+  "bin": {
+    "geld": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "geld": "^1.2.1",
+    "meow": "^4.0.0"
+  },
+  "devDependencies": {
+    "xo": "^0.18.2"
+  },
+  "keywords": [
+    "currency",
+    "format",
+    "cli"
+  ],
+  "xo": {
+    "esnext": true,
+    "space": true
+  }
+}
