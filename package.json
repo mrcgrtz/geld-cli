@@ -1,7 +1,7 @@
 {
   "name": "geld-cli",
   "version": "1.0.0",
-  "description": "A CLI for geld, a minimal currency formatter.",
+  "description": "Convert a number to a currency.",
   "repository": {
     "type": "git",
     "url": "https://github.com/Dreamseer/geld-cli.git"

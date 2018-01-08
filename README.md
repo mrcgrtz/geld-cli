@@ -1,4 +1,4 @@
-# geld CLI
+# geld-cli
 
 > Convert a number to a currency.
 
@@ -21,7 +21,7 @@ $ yarn global add geld-cli
 ```
 $ geld --help
 
-  A CLI for geld, a minimal currency formatter.
+  Convert a number to a currency.
 
   Usage
     $ geld <input>
