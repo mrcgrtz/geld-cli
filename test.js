@@ -10,7 +10,7 @@ test('Input without flags', async t => {
   const {stdout} = await execa('./cli.js', [
     1337.42
   ]);
-  t.true(stdout === '1.337,42 €');
+  t.true(stdout === '1.337,42 €');
 });
 
 test('Input with flags', async t => {

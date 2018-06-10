@@ -49,8 +49,7 @@ const cli = meow(`
     },
     space: {
       type: 'string',
-      alias: 's',
-      default: ' ' // Overwrite geld's default which is the &nbsp; HTML entity
+      alias: 's'
     }
   }
 });
