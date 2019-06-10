@@ -1779,10 +1779,10 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
 
-geld@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/geld/-/geld-1.4.0.tgz#cb4693d6d3bc14e476082ea08cc6ad8b86c4adfe"
-  integrity sha512-0pAhVjJAj1kvA0PBH47vy8g/e/XJ9Ob39eQxb0ndUmA1007sq9icViLC5LdxlXaUKAA1YAnD/u/gWyCCRTciAA==
+geld@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/geld/-/geld-1.5.0.tgz#44c88acdada034460c8c645643299a69009938c4"
+  integrity sha512-SFQIafpMY0TZcsz2Z1KwQ4LnJZbesmnGH6JZESbt/i/t/ELE7ct4OLHbLkyzDOJ2fEuyAmgFnYCigIbyXWUe4Q==
 
 get-port@^5.0.0:
   version "5.0.0"
