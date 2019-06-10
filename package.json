@@ -2,6 +2,7 @@
   "name": "geld-cli",
   "version": "1.0.3",
   "description": "Convert a number to a currency.",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/Dreamseer/geld-cli.git"
@@ -15,15 +16,20 @@
     "geld": "cli.js"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "scripts": {
+    "format": "xo --fix",
     "test": "xo && ava"
   },
   "files": [
     "cli.js"
   ],
-  "license": "MIT",
+  "keywords": [
+    "currency",
+    "format",
+    "cli"
+  ],
   "dependencies": {
     "geld": "^1.5.0",
     "meow": "^5.0.0"
@@ -32,14 +38,5 @@
     "ava": "^2.1.0",
     "execa": "^1.0.0",
     "xo": "^0.24.0"
-  },
-  "keywords": [
-    "currency",
-    "format",
-    "cli"
-  ],
-  "xo": {
-    "esnext": true,
-    "space": true
   }
 }
