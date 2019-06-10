@@ -22,40 +22,40 @@ const cli = meow(`
     $ geld 1337.42
     1.337,42 €
 `, {
-  flags: {
-    currency: {
-      type: 'string',
-      alias: 'c'
-    },
-    currencyPosition: {
-      type: 'string',
-      alias: 'cp'
-    },
-    decimals: {
-      type: 'string',
-      alias: 'd'
-    },
-    decimalSeparator: {
-      type: 'string',
-      alias: 'ds'
-    },
-    orderSeparator: {
-      type: 'string',
-      alias: 'os'
-    },
-    zeroDecimals: {
-      type: 'string',
-      alias: 'z'
-    },
-    space: {
-      type: 'string',
-      alias: 's'
-    }
-  }
+	flags: {
+		currency: {
+			type: 'string',
+			alias: 'c'
+		},
+		currencyPosition: {
+			type: 'string',
+			alias: 'cp'
+		},
+		decimals: {
+			type: 'string',
+			alias: 'd'
+		},
+		decimalSeparator: {
+			type: 'string',
+			alias: 'ds'
+		},
+		orderSeparator: {
+			type: 'string',
+			alias: 'os'
+		},
+		zeroDecimals: {
+			type: 'string',
+			alias: 'z'
+		},
+		space: {
+			type: 'string',
+			alias: 's'
+		}
+	}
 });
 
 if (cli.input[0] === undefined) {
-  cli.showHelp();
+	cli.showHelp();
 } else {
-  console.log(geld(cli.input[0], cli.flags));
+	console.log(geld(cli.input[0], cli.flags));
 }
