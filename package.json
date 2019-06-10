@@ -15,7 +15,7 @@
     "geld": "cli.js"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "scripts": {
     "test": "xo && ava"
@@ -25,13 +25,13 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "geld": "^1.3.0",
+    "geld": "^1.4.0",
     "meow": "^5.0.0"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
-    "execa": "^0.10.0",
-    "xo": "^0.21.1"
+    "ava": "^2.1.0",
+    "execa": "^1.0.0",
+    "xo": "^0.24.0"
   },
   "keywords": [
     "currency",

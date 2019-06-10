@@ -2,7 +2,7 @@ import test from 'ava';
 import execa from 'execa';
 
 test('Input without flags and value', async t => {
-  const error = await t.throws(execa('./cli.js'));
+  const error = await t.throwsAsync(() => execa('./cli.js'));
   t.is(error.code, 2);
 });
 
