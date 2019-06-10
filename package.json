@@ -1,6 +1,6 @@
 {
   "name": "geld-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convert a number to a currency.",
   "license": "MIT",
   "repository": {
