@@ -1,5 +1,5 @@
-import test from 'ava';
-import execa from 'execa';
+const test = require('ava');
+const execa = require('execa');
 
 test('Input without flags and value', async t => {
 	const error = await t.throwsAsync(() => execa('./cli.js'));
