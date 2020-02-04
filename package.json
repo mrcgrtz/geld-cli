@@ -31,11 +31,11 @@
     "cli"
   ],
   "dependencies": {
-    "geld": "^1.5.1",
+    "geld": "^1.5.2",
     "meow": "^6.0.0"
   },
   "devDependencies": {
-    "ava": "^3.0.0",
+    "ava": "^3.2.0",
     "execa": "^4.0.0",
     "xo": "^0.25.3"
   }

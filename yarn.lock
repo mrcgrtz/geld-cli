@@ -313,10 +313,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-ava@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/ava/-/ava-3.0.0.tgz#1a80da2d8298d26f0f255964c1791b83b6f4979d"
-  integrity sha512-ev72DZrWJRdZbvDDjbAwrfzJ0KEX5cDM5XNtIrgQjJmMR6yLM/T/WJ2jWF21ylrRdMbdG6E3Wrpa+psvzqC4OA==
+ava@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/ava/-/ava-3.2.0.tgz#ab019f211c24f5d732b26babb7c75635012d3b83"
+  integrity sha512-Jf2DlzrDp83f8OcyN0fNcT6QX1ORk3E/bCxBrwPxbh3Szg8eA03QjK/ZYjAa6OHIEWBxZuuT7x7kupgrUo7HVQ==
   dependencies:
     "@concordance/react" "^2.0.0"
     ansi-styles "^4.2.1"
@@ -1635,10 +1635,10 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-geld@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/geld/-/geld-1.5.1.tgz#089e137fe835acec5f9784a8c50994406ad6c3e2"
-  integrity sha512-gEhNHErXHXIO5yOKk49bHt5wfCAUCZmIhqpsUe/185LgEKqlfYbnMdMLS336Cv5PuJd0tQDIVgv5nI/oSp/GEg==
+geld@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/geld/-/geld-1.5.2.tgz#7c286efaf0a41af0372492217a36b049f84df1b0"
+  integrity sha512-Y1GsbhuCsPqA8rXyZxRRVZUw9Jbn2vCLCrb5GrOrb9kJnnCQxWeUWNDW+gROOBbm/WMrhxBSYEOgzAiWg0XNwA==
 
 get-caller-file@^2.0.1:
   version "2.0.5"
