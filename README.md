@@ -2,7 +2,7 @@
 
 > Convert a number to a currency.
 
-[![Build Status](https://travis-ci.org/Dreamseer/geld-cli.svg?branch=master)](https://travis-ci.org/Dreamseer/geld-cli) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Greenkeeper badge](https://badges.greenkeeper.io/Dreamseer/geld-cli.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/Dreamseer/geld-cli.svg?branch=master)](https://travis-ci.org/Dreamseer/geld-cli) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) 
 
 ## Install
 
