@@ -1,2 +1,4 @@
 node_modules
 npm-error.log
+.nyc_output
+coverage

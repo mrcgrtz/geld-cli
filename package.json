@@ -20,7 +20,8 @@
   },
   "scripts": {
     "format": "xo --fix",
-    "test": "xo && ava"
+    "test": "xo && nyc ava",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "files": [
     "cli.js"
@@ -35,8 +36,15 @@
     "meow": "^6.0.1"
   },
   "devDependencies": {
-    "ava": "^3.2.0",
+    "ava": "^3.5.0",
+    "coveralls": "^3.0.9",
     "execa": "^4.0.0",
-    "xo": "^0.27.0"
-  }
+    "nyc": "^15.0.0",
+    "pre-commit": "^1.2.2",
+    "xo": "^0.28.0"
+  },
+  "pre-commit": [
+    "format",
+    "test"
+  ]
 }
