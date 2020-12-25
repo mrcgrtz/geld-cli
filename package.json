@@ -33,15 +33,15 @@
   ],
   "dependencies": {
     "geld": "^1.5.3",
-    "meow": "^7.0.1"
+    "meow": "^8.1.0"
   },
   "devDependencies": {
-    "ava": "^3.11.1",
+    "ava": "^3.14.0",
     "coveralls": "^3.1.0",
-    "execa": "^4.0.3",
+    "execa": "^5.0.0",
     "nyc": "^15.1.0",
     "pre-commit": "^1.2.2",
-    "xo": "^0.33.1"
+    "xo": "^0.36.1"
   },
   "pre-commit": [
     "format",
