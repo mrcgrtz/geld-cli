@@ -2,8 +2,8 @@
 
 'use strict';
 
-const meow = require('meow');
-const geld = require('geld');
+import meow from 'meow';
+import geld from 'geld';
 
 const cli = meow(`
   Usage
@@ -22,6 +22,7 @@ const cli = meow(`
     $ geld 1337.42
     1.337,42 €
 `, {
+	importMeta: import.meta,
 	flags: {
 		currency: {
 			type: 'string',
