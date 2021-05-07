@@ -2,25 +2,19 @@
 
 > Convert a number to a currency.
 
-[![Build Status](https://travis-ci.org/Dreamseer/geld-cli.svg?branch=main)](https://travis-ci.org/Dreamseer/geld-cli) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) 
+[![Build Status](https://travis-ci.org/Dreamseer/geld-cli.svg?branch=main)](https://travis-ci.org/Dreamseer/geld-cli) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 ## Install
 
 Using [npm](https://www.npmjs.com/get-npm):
 
-```
-$ npm install geld-cli --global
-```
-
-Using [yarn](https://yarnpkg.com/):
-
-```
-$ yarn global add geld-cli
+```bash
+npm install geld-cli --global
 ```
 
 ## Usage
 
-```
+```bash
 $ geld --help
 
   Convert a number to a currency.
@@ -42,7 +36,7 @@ $ geld --help
     1.337,42 €
 ```
 
-```
+```bash
 $ geld 1337.42
 1.337,42 €
 ```
