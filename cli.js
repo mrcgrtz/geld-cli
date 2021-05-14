@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-'use strict';
-
 import meow from 'meow';
 import geld from 'geld';
 

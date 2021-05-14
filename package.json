@@ -33,7 +33,7 @@
     "cli"
   ],
   "dependencies": {
-    "geld": "^1.8.0",
+    "geld": "^1.8.1",
     "meow": "^10.0.0"
   },
   "devDependencies": {
@@ -41,7 +41,7 @@
     "c8": "^7.7.2",
     "execa": "^5.0.0",
     "pre-commit": "^1.2.2",
-    "xo": "^0.39.1"
+    "xo": "^0.40.1"
   },
   "pre-commit": [
     "format",
