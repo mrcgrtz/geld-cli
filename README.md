@@ -2,7 +2,11 @@
 
 > Convert a number to a currency.
 
-[![Build Status](https://travis-ci.org/Dreamseer/geld-cli.svg?branch=main)](https://travis-ci.org/Dreamseer/geld-cli) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+![Update Status](https://img.shields.io/david/dev/dreamseer/geld-cli.svg)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dreamseer/geld-cli/default/main)
+[![Coverage Status](https://coveralls.io/repos/github/Dreamseer/geld-cli/badge.svg?branch=main)](https://coveralls.io/github/Dreamseer/geld-cli?branch=main)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+[![MIT license](https://img.shields.io/github/license/dreamseer/geld-cli.svg)](https://github.com/Dreamseer/geld-cli/blob/main/LICENSE.md)
 
 ## Install
 
