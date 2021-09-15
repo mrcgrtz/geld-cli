@@ -8,7 +8,7 @@ test('Input without flags and value', async t => {
 
 test('Input without flags', async t => {
 	const {stdout} = await execa('./cli.js', [
-		1337.42
+		1337.42,
 	]);
 	t.true(stdout === '1.337,42 €');
 });
@@ -22,7 +22,7 @@ test('Input with flags', async t => {
 		'--decimalSeparator=.',
 		'--orderSeparator=,',
 		'--zeroDecimals=–',
-		'--space='
+		'--space=',
 	]);
 	t.true(stdout === '$1,337');
 });
@@ -36,7 +36,7 @@ test('Input with flag aliases', async t => {
 		'--ds=.',
 		'--os=,',
 		'--z=–',
-		'--s='
+		'--s=',
 	]);
 	t.true(stdout === '$1,337');
 });

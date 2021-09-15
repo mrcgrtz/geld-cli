@@ -24,33 +24,33 @@ const cli = meow(`
 	flags: {
 		currency: {
 			type: 'string',
-			alias: 'c'
+			alias: 'c',
 		},
 		currencyPosition: {
 			type: 'string',
-			alias: 'cp'
+			alias: 'cp',
 		},
 		decimals: {
 			type: 'string',
-			alias: 'd'
+			alias: 'd',
 		},
 		decimalSeparator: {
 			type: 'string',
-			alias: 'ds'
+			alias: 'ds',
 		},
 		orderSeparator: {
 			type: 'string',
-			alias: 'os'
+			alias: 'os',
 		},
 		zeroDecimals: {
 			type: 'string',
-			alias: 'z'
+			alias: 'z',
 		},
 		space: {
 			type: 'string',
-			alias: 's'
-		}
-	}
+			alias: 's',
+		},
+	},
 });
 
 if (cli.input[0] === undefined) {
