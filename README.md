@@ -2,7 +2,6 @@
 
 > Convert a number to a currency.
 
-![Update Status](https://img.shields.io/david/dev/dreamseer/geld-cli.svg)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dreamseer/geld-cli/default/main)
 [![Coverage Status](https://coveralls.io/repos/github/Dreamseer/geld-cli/badge.svg?branch=main)](https://coveralls.io/github/Dreamseer/geld-cli?branch=main)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
