@@ -33,11 +33,11 @@
   ],
   "dependencies": {
     "geld": "^2.0.0",
-    "meow": "^10.0.0"
+    "meow": "^10.1.1"
   },
   "devDependencies": {
     "ava": "^3.15.0",
-    "c8": "^7.9.0",
+    "c8": "^7.10.0",
     "execa": "^5.1.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.0.2",
