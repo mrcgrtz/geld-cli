@@ -3,10 +3,7 @@
   "version": "2.0.0",
   "description": "Convert a number to a currency.",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Dreamseer/geld-cli.git"
-  },
+  "repository": "github:mrcgrtz/geld-cli",
   "author": {
     "name": "Marc Görtz",
     "email": "git@marcgoertz.de",
