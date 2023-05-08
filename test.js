@@ -27,7 +27,7 @@ test('Input with flags', async t => {
 	t.true(stdout === '$1,337');
 });
 
-test('Input with flag aliases', async t => {
+test('Input with short flags', async t => {
 	const {stdout} = await execa('./cli.js', [
 		1337.42,
 		'--c=$',

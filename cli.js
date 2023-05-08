@@ -3,6 +3,7 @@
 import meow from 'meow';
 import geld from 'geld';
 
+/** @type {import('meow').Result<Flags>} */
 const cli = meow(`
   Usage
     $ geld <input>
@@ -24,31 +25,31 @@ const cli = meow(`
 	flags: {
 		currency: {
 			type: 'string',
-			alias: 'c',
+			shortFlag: 'c',
 		},
 		currencyPosition: {
 			type: 'string',
-			alias: 'cp',
+			shortFlag: 'cp',
 		},
 		decimals: {
 			type: 'string',
-			alias: 'd',
+			shortFlag: 'd',
 		},
 		decimalSeparator: {
 			type: 'string',
-			alias: 'ds',
+			shortFlag: 'ds',
 		},
 		orderSeparator: {
 			type: 'string',
-			alias: 'os',
+			shortFlag: 'os',
 		},
 		zeroDecimals: {
 			type: 'string',
-			alias: 'z',
+			shortFlag: 'z',
 		},
 		space: {
 			type: 'string',
-			alias: 's',
+			shortFlag: 's',
 		},
 	},
 });
