@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "geld": "^2.0.0",
-    "meow": "^12.0.1"
+    "meow": "^13.0.0"
   },
   "devDependencies": {
     "ava": "^5.0.1",
