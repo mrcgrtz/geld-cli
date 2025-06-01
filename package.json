@@ -30,7 +30,7 @@
     "cli"
   ],
   "dependencies": {
-    "geld": "^3.0.0",
+    "geld": "^4.0.0",
     "meow": "^13.0.0"
   },
   "devDependencies": {
