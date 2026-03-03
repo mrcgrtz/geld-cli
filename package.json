@@ -41,6 +41,9 @@
     "lint-staged": "^16.1.0",
     "xo": "^1.0.5"
   },
+  "overrides": {
+    "yargs": "^18.0.0"
+  },
   "lint-staged": {
     "*.js": [
       "xo --fix",
