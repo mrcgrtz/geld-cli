@@ -13,7 +13,7 @@
     "geld": "cli.js"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=22"
   },
   "type": "module",
   "scripts": {
