@@ -1,53 +1,59 @@
 {
-  "name": "geld-cli",
-  "version": "2.0.0",
-  "description": "Convert a number to a currency.",
-  "license": "MIT",
-  "repository": "github:mrcgrtz/geld-cli",
-  "author": {
-    "name": "Marc Görtz",
-    "email": "git@marcgoertz.de",
-    "url": "https://marcgoertz.de/"
-  },
-  "bin": {
-    "geld": "cli.js"
-  },
-  "engines": {
-    "node": ">=22"
-  },
-  "type": "module",
-  "scripts": {
-    "coverage": "c8 report --reporter=lcov",
-    "prepare": "husky",
-    "test": "xo && c8 ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "currency",
-    "format",
-    "cli"
-  ],
-  "dependencies": {
-    "geld": "^4.0.0",
-    "meow": "^14.0.0"
-  },
-  "devDependencies": {
-    "ava": "^8.0.0",
-    "c8": "^12.0.0",
-    "execa": "^10.0.0",
-    "husky": "^9.0.7",
-    "lint-staged": "^17.0.7",
-    "xo": "^4.0.0"
-  },
-  "overrides": {
-    "yargs": "^18.0.0"
-  },
-  "lint-staged": {
-    "*.js": [
-      "xo --fix",
-      "c8 ava"
-    ]
-  }
+	"name": "geld-cli",
+	"version": "2.0.0",
+	"description": "Convert a number to a currency.",
+	"license": "MIT",
+	"repository": "github:mrcgrtz/geld-cli",
+	"author": "Marc Görtz <git@marcgoertz.de> (https://marcgoertz.de/)",
+	"type": "module",
+	"bin": {
+		"geld": "./cli.js"
+	},
+	"engines": {
+		"node": ">=22"
+	},
+	"scripts": {
+		"coverage": "c8 report --reporter=lcov",
+		"prepare": "husky",
+		"test": "xo && c8 ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"currency",
+		"format",
+		"cli"
+	],
+	"dependencies": {
+		"geld": "^4.0.0",
+		"meow": "^14.0.0"
+	},
+	"devDependencies": {
+		"ava": "^8.0.0",
+		"c8": "^12.0.0",
+		"execa": "^10.0.0",
+		"husky": "^9.0.7",
+		"lint-staged": "^17.0.7",
+		"xo": "^5.0.1"
+	},
+	"lint-staged": {
+		"*.js": [
+			"xo --fix"
+		]
+	},
+	"xo": [
+		{
+			"files": ["package.json"],
+			"rules": {
+				"package-json/no-redundant-files": "off"
+			}
+		},
+		{
+			"files": ["*.js"],
+			"rules": {
+				"jsdoc/require-asterisk-prefix": "off"
+			}
+		}
+	]
 }

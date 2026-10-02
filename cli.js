@@ -3,7 +3,9 @@
 import meow from 'meow';
 import geld from 'geld';
 
-/** @type {import('meow').Result<Flags>} */
+/**
+ * @type {import('meow').Result<Flags>}
+ */
 const cli = meow(`
   Usage
     $ geld <input>
