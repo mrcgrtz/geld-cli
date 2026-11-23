@@ -10,7 +10,7 @@ test('Input without flags', async t => {
 	const {stdout} = await execa('./cli.js', [
 		1337.42,
 	]);
-	t.true(stdout === '1.337,42 €');
+	t.is(stdout, '1.337,42 €');
 });
 
 test('Input with flags', async t => {
@@ -24,7 +24,7 @@ test('Input with flags', async t => {
 		'--zeroDecimals=–',
 		'--space=',
 	]);
-	t.true(stdout === '$1,337');
+	t.is(stdout, '$1,337');
 });
 
 test('Input with short flags', async t => {
@@ -38,5 +38,5 @@ test('Input with short flags', async t => {
 		'--z=–',
 		'--s=',
 	]);
-	t.true(stdout === '$1,337');
+	t.is(stdout, '$1,337');
 });
