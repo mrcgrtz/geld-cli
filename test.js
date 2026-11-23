@@ -40,3 +40,18 @@ test('Input with short flags', async t => {
 	]);
 	t.is(stdout, '$1,337');
 });
+
+test('Input of zero', async t => {
+	const {stdout} = await execa('./cli.js', ['0']);
+	t.is(stdout, '0 €');
+});
+
+test('Input of negative number', async t => {
+	const {stdout} = await execa('./cli.js', ['-200000']);
+	t.is(stdout, '-200.000 €');
+});
+
+test('Input with full decimal precision', async t => {
+	const {stdout} = await execa('./cli.js', ['12345678901234567.89']);
+	t.is(stdout, '12.345.678.901.234.567,89 €');
+});

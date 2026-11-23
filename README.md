@@ -34,9 +34,12 @@ $ geld --help
     --zeroDecimals, -z       Zero decimals character
     --space, -s              Space between value and currency symbol
 
-  Example
+  Examples
     $ geld 1337.42
     1.337,42 €
+
+    $ geld -1337.42
+    -1.337,42 €
 ```
 
 ```bash
