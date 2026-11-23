@@ -30,11 +30,11 @@
 		"meow": "^14.0.0"
 	},
 	"devDependencies": {
-		"ava": "^8.0.0",
+		"ava": "^8.4.0",
 		"c8": "^12.0.0",
 		"execa": "^10.0.0",
 		"husky": "^9.0.7",
-		"lint-staged": "^17.0.7",
+		"lint-staged": "^17.6.2",
 		"xo": "^5.0.1"
 	},
 	"lint-staged": {
@@ -44,13 +44,17 @@
 	},
 	"xo": [
 		{
-			"files": ["package.json"],
+			"files": [
+				"package.json"
+			],
 			"rules": {
 				"package-json/no-redundant-files": "off"
 			}
 		},
 		{
-			"files": ["*.js"],
+			"files": [
+				"*.js"
+			],
 			"rules": {
 				"jsdoc/require-asterisk-prefix": "off"
 			}
