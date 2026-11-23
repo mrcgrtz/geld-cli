@@ -27,8 +27,8 @@ $ geld --help
 
   Options
     --currency, -c                Currency symbol, default: €
-    --currencyPosition, --cp, -p  Currency position, default: after
-    --decimals, -d                Number of decimals (precision), default: 2
+    --currencyPosition, --cp, -p  Currency position (before or after), default: after
+    --decimals, -d                Number of decimals (0 to 100), default: 2
     --decimalSeparator, --ds      Decimal separator, default: ,
     --orderSeparator, --os        Order separator, default: .
     --zeroDecimals, -z            Zero decimals character
@@ -49,6 +49,8 @@ $ geld 1337.42
 $ geld 1337.42 --currency '$' --currencyPosition before --decimalSeparator . --orderSeparator , --space ''
 $1,337.42
 ```
+
+Invalid input or flag values print an error and exit with code `2`.
 
 ## Related
 

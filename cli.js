@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import process from 'node:process';
 import meow from 'meow';
 import geld from 'geld';
 
@@ -12,8 +13,8 @@ const cli = meow(`
 
   Options
     --currency, -c                Currency symbol, default: €
-    --currencyPosition, --cp, -p  Currency position, default: after
-    --decimals, -d                Number of decimals (precision), default: 2
+    --currencyPosition, --cp, -p  Currency position (before or after), default: after
+    --decimals, -d                Number of decimals (0 to 100), default: 2
     --decimalSeparator, --ds      Decimal separator, default: ,
     --orderSeparator, --os        Order separator, default: .
     --zeroDecimals, -z            Zero decimals character
@@ -38,7 +39,7 @@ const cli = meow(`
 			aliases: ['cp'],
 		},
 		decimals: {
-			type: 'string',
+			type: 'number',
 			shortFlag: 'd',
 		},
 		decimalSeparator: {
@@ -60,8 +61,30 @@ const cli = meow(`
 	},
 });
 
-if (cli.input[0] === undefined) {
-	cli.showHelp();
-} else {
-	console.log(geld(cli.input[0], cli.flags));
+function fail(message) {
+	console.error(message);
+	process.exit(2);
 }
+
+const [input] = cli.input;
+const {currencyPosition, decimals} = cli.flags;
+
+if (input === undefined) {
+	cli.showHelp();
+}
+
+if (currencyPosition !== undefined && !['before', 'after'].includes(currencyPosition)) {
+	fail(`Invalid currency position: ${currencyPosition}. Use before or after.`);
+}
+
+if (decimals !== undefined && !(Number.isSafeInteger(decimals) && decimals >= 0 && decimals <= 100)) {
+	fail('Invalid number of decimals. Use an integer from 0 to 100.');
+}
+
+const output = geld(input, cli.flags);
+
+if (output === '') {
+	fail(`Invalid number: ${input}`);
+}
+
+console.log(output);

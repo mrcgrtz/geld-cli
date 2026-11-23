@@ -72,3 +72,21 @@ test('Input with full decimal precision', async t => {
 	const {stdout} = await execa('./cli.js', ['12345678901234567.89']);
 	t.is(stdout, '12.345.678.901.234.567,89 €');
 });
+
+test('Invalid input', async t => {
+	const error = await t.throwsAsync(() => execa('./cli.js', ['abc']));
+	t.is(error.exitCode, 2);
+	t.is(error.stderr, 'Invalid number: abc');
+});
+
+test('Invalid currency position', async t => {
+	const error = await t.throwsAsync(() => execa('./cli.js', [1337.42, '--currencyPosition=left']));
+	t.is(error.exitCode, 2);
+	t.is(error.stderr, 'Invalid currency position: left. Use before or after.');
+});
+
+test('Invalid number of decimals', async t => {
+	const error = await t.throwsAsync(() => execa('./cli.js', [1337.42, '--decimals=abc']));
+	t.is(error.exitCode, 2);
+	t.is(error.stderr, 'Invalid number of decimals. Use an integer from 0 to 100.');
+});
