@@ -26,13 +26,13 @@ $ geld --help
     $ geld <input>
 
   Options
-    --currency, -c           Currency symbol, default: €
-    --currencyPosition, -cp  Currency position, default: after
-    --decimals, -d           Number of decimals (precision), default: 2
-    --decimalSeparator, -ds  Decimal separator, default: ,
-    --orderSeparator, -os    Order separator, default .
-    --zeroDecimals, -z       Zero decimals character
-    --space, -s              Space between value and currency symbol
+    --currency, -c                Currency symbol, default: €
+    --currencyPosition, --cp, -p  Currency position, default: after
+    --decimals, -d                Number of decimals (precision), default: 2
+    --decimalSeparator, --ds      Decimal separator, default: ,
+    --orderSeparator, --os        Order separator, default: .
+    --zeroDecimals, -z            Zero decimals character
+    --space, -s                   Space between value and currency symbol
 
   Examples
     $ geld 1337.42
@@ -45,6 +45,9 @@ $ geld --help
 ```bash
 $ geld 1337.42
 1.337,42 €
+
+$ geld 1337.42 --currency '$' --currencyPosition before --decimalSeparator . --orderSeparator , --space ''
+$1,337.42
 ```
 
 ## Related

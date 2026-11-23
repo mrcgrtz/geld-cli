@@ -27,7 +27,7 @@ test('Input with flags', async t => {
 	t.is(stdout, '$1,337');
 });
 
-test('Input with short flags', async t => {
+test('Input with flag aliases', async t => {
 	const {stdout} = await execa('./cli.js', [
 		1337.42,
 		'--c=$',
@@ -39,6 +39,23 @@ test('Input with short flags', async t => {
 		'--s=',
 	]);
 	t.is(stdout, '$1,337');
+});
+
+test('Input with short flags', async t => {
+	const {stdout} = await execa('./cli.js', [
+		1337.42,
+		'-c',
+		'$',
+		'-p',
+		'before',
+		'-d',
+		'0',
+		'-z',
+		'–',
+		'-s',
+		'',
+	]);
+	t.is(stdout, '$1.337');
 });
 
 test('Input of zero', async t => {

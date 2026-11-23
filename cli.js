@@ -11,13 +11,13 @@ const cli = meow(`
     $ geld <input>
 
   Options
-    --currency, -c           Currency symbol, default: €
-    --currencyPosition, -cp  Currency position, default: after
-    --decimals, -d           Number of decimals (precision), default: 2
-    --decimalSeparator, -ds  Decimal separator, default: ,
-    --orderSeparator, -os    Order separator, default .
-    --zeroDecimals, -z       Zero decimals character
-    --space, -s              Space between value and currency symbol
+    --currency, -c                Currency symbol, default: €
+    --currencyPosition, --cp, -p  Currency position, default: after
+    --decimals, -d                Number of decimals (precision), default: 2
+    --decimalSeparator, --ds      Decimal separator, default: ,
+    --orderSeparator, --os        Order separator, default: .
+    --zeroDecimals, -z            Zero decimals character
+    --space, -s                   Space between value and currency symbol
 
   Examples
     $ geld 1337.42
@@ -34,7 +34,8 @@ const cli = meow(`
 		},
 		currencyPosition: {
 			type: 'string',
-			shortFlag: 'cp',
+			shortFlag: 'p',
+			aliases: ['cp'],
 		},
 		decimals: {
 			type: 'string',
@@ -42,11 +43,11 @@ const cli = meow(`
 		},
 		decimalSeparator: {
 			type: 'string',
-			shortFlag: 'ds',
+			aliases: ['ds'],
 		},
 		orderSeparator: {
 			type: 'string',
-			shortFlag: 'os',
+			aliases: ['os'],
 		},
 		zeroDecimals: {
 			type: 'string',
